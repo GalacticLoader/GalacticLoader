@@ -1,10 +1,6 @@
 plugins {
-    id 'java'
+    id 'java-library'
 }
-apply plugin: 'java'
-
-group = 'org.example.examplemod'
-version = '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral() {
@@ -20,6 +16,9 @@ repositories {
         url "https://maven.fabricmc.net/"
     }
 }
+
+version = '1.1.0'
+group = "org.moddersden"
 
 dependencies {
     compileOnly "com.google.guava:guava:33.0.0-jre"
