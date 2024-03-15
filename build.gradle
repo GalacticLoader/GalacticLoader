@@ -1,0 +1,39 @@
+plugins {
+    id 'java'
+}
+apply plugin: 'java'
+
+group = 'org.example.examplemod'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral() {
+        content {
+            excludeGroupByRegex "org.ow2.asm"
+            excludeGroupByRegex "io.github.llamalad7"
+        }
+    }
+    maven {
+        url "https://repo.spongepowered.org/maven/"
+    }
+    maven {
+        url "https://maven.fabricmc.net/"
+    }
+}
+
+dependencies {
+    compileOnly "com.google.guava:guava:33.0.0-jre"
+    compileOnly "com.google.code.gson:gson:2.9.1"
+
+    compileOnly "net.fabricmc:fabric-loader:0.15.7"
+    compileOnly "net.fabricmc:tiny-mappings-parser:0.2.2.14"
+    compileOnly "net.fabricmc:access-widener:2.1.0"
+    compileOnly "net.fabricmc:sponge-mixin:0.12.5+mixin.0.8.5"
+
+    compileOnly "org.ow2.asm:asm:9.6"
+    compileOnly "org.ow2.asm:asm-util:9.6"
+    compileOnly "org.ow2.asm:asm-tree:9.6"
+    compileOnly "org.ow2.asm:asm-analysis:9.6"
+    compileOnly "org.ow2.asm:asm-commons:9.6"
+    compileOnly "io.github.llamalad7:mixinextras-fabric:0.3.5"
+}

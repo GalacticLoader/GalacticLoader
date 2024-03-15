@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ReachTheMoonLoader">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/bin/ReachTheMoonLoader.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
